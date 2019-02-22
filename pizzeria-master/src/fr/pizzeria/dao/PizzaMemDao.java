@@ -60,16 +60,34 @@ public class PizzaMemDao implements IPizzaDao {
 		}
 	}
 
-	//@Override
-	public Pizza findPizzaByCode(String codePizza) {
-		// TODO Auto-generated method stub
-		return null;
+	public Pizza findPizzaByCode(String codePizza){
+		
+		Pizza pizzaFound = null;
+		
+		for(Pizza pizza: pizzas){			
+			
+			if(pizza.getCode().equals(codePizza)){
+				pizzaFound = pizza;
+			}
+		}
+		
+		
+		return pizzaFound;
 	}
-
-	//@Override
-	public boolean pizzaExists(String codePizza) {
-		// TODO Auto-generated method stub
-		return false;
+	
+	public boolean pizzaExists(String codePizza){
+		
+		boolean pizzaFound = false;
+		
+		for(Pizza pizza: pizzas){
+			
+			
+			if(pizza.getCode().equals(codePizza)){
+				pizzaFound = true;
+			}
+		}
+		
+		return pizzaFound;
 	}
 
 }

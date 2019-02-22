@@ -17,7 +17,7 @@ import fr.pizzeria.model.Pizza;
 
 public class PizzaJDBCDao implements IPizzaDao{
 	
-	private List<Pizza> pizzas = new ArrayList<Pizza>();
+	
 	static Connection myConnection;
 	
 	public PizzaJDBCDao() throws IOException, ClassNotFoundException, SQLException{

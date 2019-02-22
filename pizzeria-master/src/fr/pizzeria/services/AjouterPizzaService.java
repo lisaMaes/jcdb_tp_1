@@ -28,10 +28,7 @@ public class AjouterPizzaService extends MenuService {
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();		}
-		
-
-		
-
+	
 	}
 
 }
